@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ダッシュボード</title>
+    <link rel="stylesheet"  href="reset.css">
+    <link rel="stylesheet"  href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script></script>
+    <script>
+
+     var totalChart = document.getElementById("totalChart");
+     var myLineChart = new Chart(totalChart, {
+         type:'line',
+         data: 線を書くためのデータ,
+         options: {
+             title: {
+                  display: true,
+                  text: '日にち（4月1日~4月10日）'
+              },
+             scales: {
+                 yAxes: [{
+                     ticks: {
+                        suggestedMax: 2000000,
+                        suggestedMin: 0,
+                        stepSize: 100000,
+                        callback: function(value, index, values){
+                            return  value +  '円'
+                        }
+                      }
+                 }]
+             },
+        }
+    }
+
+
+
+
+
+  
+
+
+   </script>    
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">   
+      <div id="menu" class="cf">
+             <div id="menu_img">
+             <img src="https://soowood.co.jp/wp/wp-content/uploads/2018/09/7c4e866123723e03ef075d660bf377c4-2.png" alt="Soowood" title="Soowood" data-no-retina=""></div>
+             <li><a href="dashboard.html">ダッシュボード</li></a>
+             <li><a href="csv.html">csvパターン登録</li></a>
+             <li><a href="upload.html">売上アップロード</li></a>
+             <li><a href="login.html">ログアウト</li></a>
+        </div>
+       
+     <div id="month">
+       <input type="month" name="example" list="data1">
+       <datalist id="data1">
+       <option value="2019-01"></option>
+       <option value="2019-02"></option>
+       <option value="2019-03"></option>
+       </datalist>
+     </div>
+
+     <div id="month">
+       <input type="month" name="example" list="data1">
+       <datalist id="data1">
+       <option value="2019-01"></option>
+       <option value="2019-02"></option>
+       <option value="2019-03"></option>
+       </datalist>
+     </div>
+    
+    <div id="dashbord_chart">
+
+        
+        <div class="ct-chart">
+            <canvas id="totalChart"></canvas>
+        </div>
+
+        </div>
+          </div>    
+   
+        <div id="main_chart" class="cf">     
+
+          <div class="ota_box">
+            <div class="ota_name">$OTA_name</div>
+            <div class="ota_chart"></div>
+          </div>
+
+          <div class="ota_box">
+            <div class="ota_name">$OTA_name</div>
+            <div class="ota_chart"></div>
+          </div>
+        
+          <div class="ota_box">
+            <div class="ota_name">$OTA_name</div>
+            <div class="ota_chart"></div>
+          </div>
+
+
+          <div class="ota_box">
+            <div class="ota_name">$OTA_name</div>
+            <div class="ota_chart"></div>
+          </div>
+
+        </div>
+      </div>
+         <div id="footer"><p>©2018 SOOWOOD CO.,LTD.</p></div>
+  
+   </div>
+
+
+</body>
+</html>

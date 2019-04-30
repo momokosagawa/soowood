@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ダッシュボード</title>
+    <link rel="stylesheet"  href="reset.css">
+    <link rel="stylesheet"  href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script>
+    $(function(){ 
+     var totalChartraw = document.getElementById("totalChart");
+     new Chart(totalChartraw, {
+         type:'line',
+         data: {
+             labels: ['4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日'],
+             datasets: [
+                 {
+                     label: '総売上',
+                     data: [ 1200000, 1350000, 1300000, 1540332, 1400243, 1800000, 1750121, 1583924],
+                     borderColor: "rgba(255,0,0,1)",
+                     backgroundColor: "rgba(0,0,0,0)"
+                  },
+           ]
+        },
+
+        options: {
+             title: {
+                  display: true,
+                  text: '予約日（4月1日~4月10日）'
+              },
+             scales: {
+                 yAxes: [{
+                     ticks: {
+                        callback: function(value, index, values){
+                            return  value +  '円'
+                        }
+                      }
+                 }]
+             },
+        }
+     });
+
+
+});
+
+    $(function(){ 
+     var ota1Chartraw = document.getElementById("ota1Chart");
+     new Chart(ota1Chartraw, {
+         type:'line',
+         data: {
+             labels: ['4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日'],
+             datasets: [
+                 {
+                     label: 'じゃらん',
+                     data: [12000, 13500, 13000, 15402, 14043, 1000, 1751, 1564],
+                     borderColor: "rgba(155,0,0,1)",
+                     backgroundColor: "rgba(0,0,0,0)"
+                  },
+           ]
+        },
+
+        options: {
+             title: {
+                  display: true,
+                  text: '予約日（4月1日~4月10日）'
+              },
+             scales: {
+                 yAxes: [{
+                     ticks: {
+                        callback: function(value, index, values){
+                            return  value +  '円'
+                        }
+                      }
+                 }]
+             },
+        }
+     });
+
+
+});
+
+    $(function(){ 
+     var ota2Chartraw = document.getElementById("ota2Chart");
+     new Chart(ota2Chartraw, {
+         type:'line',
+         data: {
+             labels: ['4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日'],
+             datasets: [
+                 {
+                     label: 'Booking.com',
+                     data: [ 12000, 13500, 10000, 10332, 14023, 10000, 70121, 58924],
+                     borderColor: "rgba(100,155,0,1)",
+                     backgroundColor: "rgba(0,0,0,0)"
+                  },
+           ]
+        },
+
+        options: {
+             title: {
+                  display: true,
+                  text: '予約日ベース'
+              },
+             scales: {
+                 yAxes: [{
+                     ticks: {
+                        callback: function(value, index, values){
+                            return  value +  '円'
+                        }
+                      }
+                 }]
+             },
+        }
+     });
+
+
+});
+    $(function(){ 
+     var ota3Chartraw = document.getElementById("ota3Chart");
+     new Chart(ota3Chartraw, {
+         type:'line',
+         data: {
+             labels: ['4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日'],
+             datasets: [
+                 {
+                     label: 'Expedia',
+                     data: [ 1200, 1350, 10000, 14332,40243, 180000, 170121, 158924],
+                     borderColor: "rgba(10,10,50,1)",
+                     backgroundColor: "rgba(0,0,0,0)"
+                  },
+           ]
+        },
+
+        options: {
+             title: {
+                  display: true,
+                  text: '予約日（4月1日~4月10日）'
+              },
+             scales: {
+                 yAxes: [{
+                     ticks: {
+                        callback: function(value, index, values){
+                            return  value +  '円'
+                        }
+                      }
+                 }]
+             },
+        }
+     });
+
+
+});
+
+    $(function(){ 
+     var ota4Chartraw = document.getElementById("ota4Chart");
+     new Chart(ota4Chartraw, {
+         type:'line',
+         data: {
+             labels: ['4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日'],
+             datasets: [
+                 {
+                     label: 'Ctrip',
+                     data: [ 12000, 13500, 13000, 14332, 40243, 1800, 17121, 1924],
+                     borderColor: "rgba(5,55,150,1)",
+                     backgroundColor: "rgba(0,0,0,0)"
+                  },
+           ]
+        },
+
+        options: {
+             title: {
+                  display: true,
+                  text: '予約日（4月1日~4月10日）'
+              },
+             scales: {
+                 yAxes: [{
+                     ticks: {
+                        callback: function(value, index, values){
+                            return  value +  '円'
+                        }
+                      }
+                 }]
+             },
+        }
+     });
+
+
+});
+   </script>    
+
+
+
+</head>
+
+<body>
+<div id="wrapper">   
+    <div id="menu" class="cf">
+        <div id="menu_img">
+         <img src="https://soowood.co.jp/wp/wp-content/uploads/2018/09/7c4e866123723e03ef075d660bf377c4-2.png" alt="Soowood" title="Soowood" data-no-retina=""></div>
+         <li><a href="dashboard.html">ダッシュボード</li></a>
+         <li><a href="csv.html">csvパターン登録</li></a>
+         <li><a href="upload.html">売上アップロード</li></a>            
+         <li><a href="login.html">ログアウト</li></a>
+     </div>
+    
+     <div class="month">
+         <input type="month" name="example" list="data1">
+             <datalist id="data1">
+                 <option value="2019-01"></option>
+                 <option value="2019-02"></option>
+                 <option value="2019-03"></option>
+             </datalist>
+         <span>〜</span>
+         <input type="month" name="example" list="data1">
+             <datalist id="data1">
+                 <option value="2019-01"></option>
+                 <option value="2019-02"></option>
+                 <option value="2019-03"></option>
+             </datalist>
+         </div>
+    
+     <div id="dashbord_chart">
+         <div class="ct-chart">
+             <p>総売上</p>
+             <canvas id="totalChart"></canvas>
+         </div>
+   
+         <div id="main_chart" class="cf">     
+             <div class="ota_box">
+                 <div class="ota_chart"> 
+                     <canvas id="ota1Chart"></canvas>
+                 </div>
+             </div>
+             <div class="ota_box">
+                 <div class="ota_chart"> 
+                     <canvas id="ota2Chart"></canvas>
+                 </div>
+             </div>
+             <div class="ota_box">
+                 <div class="ota_chart"> 
+                     <canvas id="ota3Chart"></canvas>
+                 </div>
+             </div>
+             <div class="ota_box">
+                 <div class="ota_chart"> 
+                     <canvas id="ota4Chart"></canvas>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div id="footer"><p>©2018 SOOWOOD CO.,LTD.</p>
+     </div>
+ </div>
+</body>
+</html>

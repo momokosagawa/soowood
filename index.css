@@ -1,0 +1,465 @@
+body{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Roboto', "游ゴシック", 'YuGothic', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",  "メイリオ", 'Meiryo', Verdana, sans-serif;
+}
+
+#wrapper{
+    width:100%;
+}
+
+
+#main{
+    padding:5%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:100vh;
+}
+
+#mainbox{
+    max-width:100%;
+    min-width:300px;
+    margin:auto;
+    padding:5%;
+    width:60%;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);  
+    border-radius: 6px;
+    text-align:center;
+}
+
+
+.logininfo{
+    font-size:8px;
+    line-height:3em;
+}
+
+.login_input{
+    height:5em;
+    width:100%;
+}
+
+.login_button{
+    font-size:0.5em;
+    background-color:#C3B9A5;
+    color:#FFFFFF;
+    margin:2em 35%;
+    line-height:3em;
+    border-radius:5px;
+}
+
+.login_button:hover{
+    background-color:#A49477;
+}
+
+
+.login_forget p{
+    font-size:0.4em;
+    text-decoration:none;
+    color:blue;
+}
+
+#footer{
+    width:100%;
+    background-color:rgba(0,0,0,0.7);
+    display:block;
+    bottom:0;
+    height:50px;
+    color:#FFFFFF;
+    font-size:0.6em;
+}
+
+
+#footer p{
+    text-align:center;
+    padding-top:25px;
+}
+
+
+.cf:after{
+    clear:both;
+}
+
+.login-css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: rgba(0,0,0,0.7);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0, 0, 0, 1);
+  -moz-transition: all 200ms cubic-bezier(0, 0, 0, 1);
+  -o-transition: all 200ms cubic-bezier(0, 0, 0, 1);
+  transition: all 200ms cubic-bezier(0, 0, 0, 1);
+}
+
+
+
+
+
+
+/*ここからupload.html*/
+
+#menu{
+    position:fixed;
+    height:50px;
+    width:100%;
+    min-width:400px;
+    background-color:rgba(0,0,0,0.7);
+    color:#FFFFFF;
+    display:table;
+}
+
+
+#menu img{
+    width:100px;
+    height:50px;
+}
+
+
+#menu_img{
+    background-color:#FFFFFF;
+    border:2px solid #eee;
+    text-align: center;
+}
+
+#menu li{
+    display:table-cell;
+    font-size:0.5em;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#menu li a{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+
+#menu li:hover{
+    background-color:#666666;
+    border-bottom:5px solid #000000;
+}
+
+
+
+
+.month{
+    position: fixed;
+    top: 60px;
+    left: 5px;
+}
+
+
+
+#dashbord_chart{
+    width:100%;
+    min-width:400px;
+    padding-top:6%;
+}
+
+#totalChart{
+    display: block;
+    width: 728px;
+    height: 100%;
+}
+
+
+
+.ct-chart{
+    width:79%;
+    height:50vh;
+    margin:10%;
+}
+
+
+#main_chart{
+    width:80%;
+    margin:18% 10%;
+}
+
+.ota_box{
+    display:inline-block;
+    width:40%;
+    margin:4%;
+}
+
+.ota_name{
+    background-color:#eee;
+}
+
+.ota_chart{
+}
+
+
+/*ここからcsvパターン登録*/
+
+#csv_body{
+    width:100%;
+    padding: 10%;
+    height: 100%;
+}
+
+.csv_maintop{
+    width: 100%;
+    margin: 5% 0;
+}
+
+.csv_maintop h3{
+    font-size:1.3em;
+    height:10%;
+    font-weight:bold;
+    line-height: 1.7em;
+}
+
+.csv_mainbottom h3{
+    font-size:1.3em;
+    height:10%;
+    font-weight:bold;
+}
+
+
+.csv_top{
+    height:100%;
+}
+
+.csv_top_box{
+    min-width:350px;
+    width:100%;
+    display:table;
+    border:1px solid black;
+}
+
+.csv_name{
+    width:30%;
+    height:100%;
+    border-right:1px solid black;
+    vertical-align:middle;
+    text-align:center;
+    display:table-cell;
+}
+
+
+.csv_namebox{
+    display:table-cell;
+    vertical-align:middle;
+    padding: 3% 0;
+    text-align: center;
+}
+
+
+
+.csv_mainbottom{
+    min-width:350px;
+    width: 100%;
+    height: 300px;
+    margin: 5% 0;
+}
+
+
+.csv_mainbottom .csv_top  .csv_top_box{
+    position:relative;
+}
+
+
+.csv_top_box img{
+    position:absolute;
+    text-align:left;
+    top:10px;
+    left:10px;
+}
+
+
+.csv_namebox select{
+    vertical-align: middle;
+}
+
+.name-css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  width:44%;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  color: rgba(7,7,7,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(234,234,234,1);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.csvname-css {
+  width:15vw;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 5px 10px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  color: rgba(7,7,7,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(234,234,234,1);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#csv_register{
+    text-align: center;
+    padding:5% 0;
+}
+
+
+
+.button_css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 40px;
+  border: 1px solid rgba(9,10,10,0.2);
+  -webkit-border-radius: 20px;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgb(75,75,75);
+  -webkit-box-shadow: 4px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 4px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: 0 -1px 0 rgba(137,138,140,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: rotateX(0.5729577951308232deg) rotateY(0.5729577951308232deg)   ;
+  transform: rotateX(0.5729577951308232deg) rotateY(0.5729577951308232deg)   ;
+}
+
+
+.select {
+    position: relative;
+    display: inline-block;
+    padding: 5% 0;
+    width: 100%;
+    text-align: center;
+}    .select select {
+        display: inline-block;
+        width: 20vw;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border: 1px solid #9e9999;
+        border-radius: 7px;
+        background: #d8d8d8;
+        color: #848484;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: #000000;
+            background: #cccccc;
+        }
+        .select select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+
+
+.select_name {
+    position: relative;
+    display: inline-block;
+}    .select_name select {
+        display: inline-block;
+        cursor: pointer;
+        padding: 2% 25%;
+        width:20vw;
+        outline: 0;
+        border: 1px solid #9e9999;
+        border-radius: 7px;
+        background: #d8d8d8;
+        color: #848484;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        }
+        .select_name select:hover,
+        .select_name select:focus {
+            color: #000000;
+            background: #cccccc;
+        }
+        .select_name select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+
+
+.uploadbutton_css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 6px 20px;
+  border: 1px solid rgba(9,10,10,0.2);
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgb(75,75,75);
+  -webkit-box-shadow: 4px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 4px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: 0 -1px 0 rgba(137,138,140,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: rotateX(0.5729577951308232deg) rotateY(0.5729577951308232deg)   ;
+  transform: rotateX(0.5729577951308232deg) rotateY(0.5729577951308232deg)   ;
+}
