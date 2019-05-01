@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ダッシュボード</title>
+    <link rel="icon" href="https://soowood.co.jp/wp/wp-content/uploads/2018/07/cropped-cropped-Touch-Icon-32x32.jpg" sizes="32x32" />
     <link rel="stylesheet"  href="reset.css">
     <link rel="stylesheet"  href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -43,6 +44,15 @@
 
 
 });
+
+     $("#totalChart").mousemove(function (e) {
+        var element = totalChart.getElementAtEvent(e);
+        if (element.length > 0) {
+            $("#totalLabel").text( totalChart.config.data.datasets[element[0]._datasetIndex].label );
+        }
+    });
+
+
 
     $(function(){ 
      var ota1Chartraw = document.getElementById("ota1Chart");
@@ -223,6 +233,7 @@
          <div class="ct-chart">
              <p>総売上</p>
              <canvas id="totalChart"></canvas>
+             <div id="totalLabel"></div>
          </div>
    
          <div id="main_chart" class="cf">     
