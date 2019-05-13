@@ -111,6 +111,7 @@ body{
 /*ここからupload.html*/
 
 #menu{
+    z-index:50;
     position:fixed;
     height:50px;
     width:100%;
