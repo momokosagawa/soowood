@@ -207,31 +207,52 @@
     <div id="menu" class="cf">
         <div id="menu_img">
          <img src="https://soowood.co.jp/wp/wp-content/uploads/2018/09/7c4e866123723e03ef075d660bf377c4-2.png" alt="Soowood" title="Soowood" data-no-retina=""></div>
+         <li><a href="ota.html">OTA追加</li></a>
          <li><a href="dashboard.html">ダッシュボード</li></a>
          <li><a href="csv.html">csvパターン登録</li></a>
          <li><a href="upload.html">売上アップロード</li></a>            
+         <li><a href="language.html">言語設定</li></a>
          <li><a href="login.html">ログアウト</li></a>
      </div>
-    
-     <div class="month">
-         <input type="month" name="example" list="data1">
-             <datalist id="data1">
-                 <option value="2019-01"></option>
-                 <option value="2019-02"></option>
-                 <option value="2019-03"></option>
-             </datalist>
-         <span>〜</span>
-         <input type="month" name="example" list="data1">
-             <datalist id="data1">
-                 <option value="2019-01"></option>
-                 <option value="2019-02"></option>
-                 <option value="2019-03"></option>
-             </datalist>
+     <div id="menu_bottom"> 
+         <div class="date">
+             <input type="date" name="example" list="data1">
+                 <datalist id="data1">
+                     <option value="2019-01"></option>
+                     <option value="2019-02"></option>
+                     <option value="2019-03"></option>
+                 </datalist>
+             <span>〜</span>
+             <input type="date" name="example" list="data1">
+                 <datalist id="data1">
+                     <option value="2019-01"></option>
+                     <option value="2019-02"></option>
+                     <option value="2019-03"></option> 
+                 </datalist>
+            </div> 
+            <div class="control-group">
+                     <label class="control control-radio">
+                    月ベース
+                     <input type="radio" name="radio" checked="checked" />
+                     <div class="control_indicator"></div>
+                     </label>
+                 </div>
+                 <div class="control-group">
+                     <label class="control control-radio">
+                    日ベース
+                     <input type="radio" name="radio" checked="checked" />
+                     <div class="control_indicator"></div>
+                     </label>
+                 </div>
+                 <input type="submit" class="serch_css" value="検索">   
+             </div>
          </div>
-    
+     </div>
      <div id="dashbord_chart">
          <div class="ct-chart">
-             <p>総売上</p>
+             <p>総売上
+                 <input type="button" class="export_css" value="データをエクスポート" />
+             </p>
              <canvas id="totalChart"></canvas>
              <div id="totalLabel"></div>
          </div>
